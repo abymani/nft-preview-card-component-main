@@ -83,10 +83,12 @@ p {
 }
 #auth-name:hover{
   color: hsl(178, 100%, 50%);
+  cursor: pointer;
 }
 
 #heading:hover{
   color: hsl(178, 100%, 50%);
+  cursor:pointer ;
 }
 #auth-text {
 
@@ -114,7 +116,9 @@ p {
 
 /* When you mouse over the container, fade in the overlay icon*/
 .image_container:hover .overlay {
-  opacity: 0.4;
+  opacity: 1;
+  background-color: hsla(178, 100%, 50%,0.5);
+  cursor: pointer;
 }
 
 /* The icon inside the overlay is positioned in the middle vertically and horizontally */
@@ -127,6 +131,7 @@ p {
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   text-align: center;
+  opacity: 1;
 }
 
 /* When you move the mouse over the icon, change color */
