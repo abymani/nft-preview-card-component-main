@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+/*### Primary
+
+- Soft blue: hsl(215, 51%, 70%)
+- Cyan: hsl(178, 100%, 50%)
+
+### Neutral
+
+- Very dark blue (main BG): hsl(217, 54%, 11%)
+- Very dark blue (card BG): hsl(216, 50%, 16%)
+- Very dark blue (line): hsl(215, 32%, 27%)
+- White: hsl(0, 0%, 100%)*/
+*{
+  font-family: 'Outfit', sans-serif;
+  color: white;
+  box-sizing: border-box;
+}
+
+body{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(217, 54%, 11%);
+}
+p {
+  font-size: 18px;
+}
+
+/*Preview card styling */
+
+.main_container{
+  width: 300px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 15px;
+  background-color: hsla(216, 50%, 16%,0.8);
+}
+
+.content_container {
+
+}
+
+#img-auth {
+  width: 30px;
+  height: 30px;
+  margin-right: 20px;
+}
+.val-time {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.author {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+/*Text styling*/
+.soft {
+  font-size: 15px;
+  font-weight: 300;
+  color: hsl(215, 51%, 70%);
+}
+.align-box {
+  display: flex;
+  flex-direction: row;
+  align-items:center;
+}
+#value {
+  color:hsl(178, 100%, 50%);
+
+}
+#auth-name:hover{
+  color: hsl(178, 100%, 50%);
+}
+
+#heading:hover{
+  color: hsl(178, 100%, 50%);
+}
+#auth-text {
+
+}
+
+.image_container {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Make the image to responsive */
+#main-img {
+  width: 100%;
+  height: auto;
+}
+
+/* The overlay effect (full height and width) - lays on top of the container and over the image */
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .3s ease;
+  background-color: hsl(178, 100%, 50%);
+}
+
+/* When you mouse over the container, fade in the overlay icon*/
+.image_container:hover .overlay {
+  opacity: 0.4;
+}
+
+/* The icon inside the overlay is positioned in the middle vertically and horizontally */
+.icon {
+  color: white;
+  font-size: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* When you move the mouse over the icon, change color */
+.fa-user:hover {
+  color: #eee;
+}
